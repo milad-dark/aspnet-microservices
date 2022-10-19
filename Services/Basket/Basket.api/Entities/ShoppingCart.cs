@@ -19,10 +19,13 @@
             get 
             {
                 decimal totalPrice = 0;
-                foreach (var item in Items)
+                if(Items != null && Items.Any())
                 {
-                    totalPrice += item.Price * item.Quantity;
+                    foreach (var item in Items)
+                    {
+                        totalPrice += item.Price * item.Quantity;
 
+                    }
                 }
                 return totalPrice;
             } 
