@@ -98,22 +98,22 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 
 5. You can **launch microservices** as below urls:
 
-* **Catalog API -> **
-* **Basket API -> **
-* **Discount API -> *
-* **Ordering API -> **
-* **Shopping.Aggregator -> /**
-* **API Gateway -> **
-* **Rabbit Management Dashboard -> **   -- guest/guest
-* **Portainer -> **   -- admin/admin1234
-* **pgAdmin PostgreSQL -> **   -- admin@aspnetrun.com/admin1234
-* **Elasticsearch -> **
-* **Kibana -> **
+* **Catalog API -> http://localhost:8000/swagger/index.html**
+* **Basket API -> http://localhost:8001/swagger/index.html**
+* **Discount API -> http://localhost:8002/swagger/index.html**
+* **Ordering API -> http://localhost:8004/swagger/index.html**
+* **Shopping.Aggregator -> http://localhost:8005/swagger/index.html**
+* **API Gateway -> http://localhost:8010/Catalog**
+* **Rabbit Management Dashboard -> http://localhost:15672**   -- guest/guest
+* **Portainer -> http://localhost:9000**   -- admin/admin1234
+* **pgAdmin PostgreSQL -> http://localhost:5050**   -- admin@aspnetrun.com/admin1234
+* **Elasticsearch -> http://localhost:9200**
+* **Kibana -> http://localhost:5601**
 
-* **Web Status -> **
-* **Web UI -> **
+* **Web Status -> http://localhost:8007**
+* **Web UI -> http://localhost:8006**
 
-5. Launch http://host.docker.internal:8007 in your browser to view the Web Status. Make sure that every microservices are healthy.
-6. Launch http://host.docker.internal:8006 in your browser to view the Web UI. You can use Web project in order to **call microservices over API Gateway**. When you **checkout the basket** you can follow **queue record on RabbitMQ dashboard**.
+5. Launch http://localhost:8007 in your browser to view the Web Status. Make sure that every microservices are healthy.
+6. Launch http://localhost:8006 in your browser to view the Web UI. You can use Web project in order to **call microservices over API Gateway**. When you **checkout the basket** you can follow **queue record on RabbitMQ dashboard**.
   
 Enjoy this!
